@@ -22,8 +22,12 @@ export METRICS_URL="http://<ip_of_router>/RST_stattbl.htm"
 
 ### Building
 
+`make build`
+or
 `docker build -t nighthawk-r7000-metrics .`
 
 ### Running
 
+`make run`
+or
 `docker run -d --name nighthawk-r7000-metrics -eMETRICS_USER=$METRICS_USER -eMETRICS_PASSWORD=$METRICS_PASSWORD -eMETRICS_URL=$METRICS_URL nighthawk-r7000-metrics`
